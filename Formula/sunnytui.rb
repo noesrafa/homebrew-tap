@@ -5,13 +5,13 @@
 class Sunnytui < Formula
   desc "TUI multiplexor de Claude Code"
   homepage "https://github.com/noesrafa/sunnytui"
-  version "0.8.5"
+  version "0.8.6"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/noesrafa/sunnytui/releases/download/v0.8.5/sunnytui_0.8.5_darwin_amd64.tar.gz"
-      sha256 "95d8ca53148583012c81663f47a07653e176959d901710280cf5167c71ac569f"
+      url "https://github.com/noesrafa/sunnytui/releases/download/v0.8.6/sunnytui_0.8.6_darwin_amd64.tar.gz"
+      sha256 "6d69e57dad415981ae98703f5ee1e317c7bbcb986d88b3a6bc6f588e8aa79393"
 
       define_method(:install) do
         bin.install "sunnytui"
@@ -20,8 +20,8 @@ class Sunnytui < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/noesrafa/sunnytui/releases/download/v0.8.5/sunnytui_0.8.5_darwin_arm64.tar.gz"
-      sha256 "83c1ef7b6623936f7725565942d89734d8cb3ff88f26710c697f3ddba107c50c"
+      url "https://github.com/noesrafa/sunnytui/releases/download/v0.8.6/sunnytui_0.8.6_darwin_arm64.tar.gz"
+      sha256 "79fb06b00aacaaefe612d043a43c543720d63024ba7322f57bc458e8e839d6c0"
 
       define_method(:install) do
         bin.install "sunnytui"
@@ -33,8 +33,8 @@ class Sunnytui < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/noesrafa/sunnytui/releases/download/v0.8.5/sunnytui_0.8.5_linux_amd64.tar.gz"
-      sha256 "644bb3ca8fb1e4f212e8c51b1c46d1a1faa8a1f54ce0ba8e0b713f6a214a6a6b"
+      url "https://github.com/noesrafa/sunnytui/releases/download/v0.8.6/sunnytui_0.8.6_linux_amd64.tar.gz"
+      sha256 "d7f74b0832d841e71242fee1542c97d2834f47e5d3c1f15263aa9eaddc8a13be"
       define_method(:install) do
         bin.install "sunnytui"
         # Symlink so users can launch via the short `sunny` name.
@@ -42,8 +42,8 @@ class Sunnytui < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/noesrafa/sunnytui/releases/download/v0.8.5/sunnytui_0.8.5_linux_arm64.tar.gz"
-      sha256 "48fe763d6dcac78d590ad66c9d262bb58a425ab7f6543f25183b2857c1afdbdb"
+      url "https://github.com/noesrafa/sunnytui/releases/download/v0.8.6/sunnytui_0.8.6_linux_arm64.tar.gz"
+      sha256 "c05fd100fd0e13df777b915bcaeefa39297f147f540c813a56d4560308fed9a7"
       define_method(:install) do
         bin.install "sunnytui"
         # Symlink so users can launch via the short `sunny` name.
