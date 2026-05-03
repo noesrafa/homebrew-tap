@@ -5,13 +5,13 @@
 class Sunny < Formula
   desc "Self-hosted personal agent. One binary, your data, your rules."
   homepage "https://github.com/noesrafa/sunny"
-  version "0.17.0"
+  version "0.17.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/noesrafa/sunny/releases/download/v0.17.0/sunny_0.17.0_darwin_arm64.tar.gz"
-      sha256 "f2361898cdff6d04770fb393e7503c726cb2d4333c899c539825c746e738ee4f"
+      url "https://github.com/noesrafa/sunny/releases/download/v0.17.1/sunny_0.17.1_darwin_arm64.tar.gz"
+      sha256 "459ffe778304ec36e8e5250145b9dbf55d715b19f6cebbbc9d69327a19525212"
 
       define_method(:install) do
         bin.install "sunny"
@@ -21,8 +21,8 @@ class Sunny < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/noesrafa/sunny/releases/download/v0.17.0/sunny_0.17.0_linux_amd64.tar.gz"
-      sha256 "ee0cc8f0b9fa81c056163611aaded78adc8aea0085db65c442d6c6a7be1de085"
+      url "https://github.com/noesrafa/sunny/releases/download/v0.17.1/sunny_0.17.1_linux_amd64.tar.gz"
+      sha256 "c65ea6c688e9ce4310b0c432942728df2ec069fe15ded5d6b9e6bd3c7f8e3e70"
       define_method(:install) do
         bin.install "sunny"
       end
